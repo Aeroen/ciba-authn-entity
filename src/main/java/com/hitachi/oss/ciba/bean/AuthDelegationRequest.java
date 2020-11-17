@@ -1,6 +1,10 @@
 package com.hitachi.oss.ciba.bean;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.hitachi.oss.ciba.util.StringOrArrayDeserializer;
+import com.hitachi.oss.ciba.util.StringOrArraySerializer;
 
 public class AuthDelegationRequest {
 
@@ -8,6 +12,8 @@ public class AuthDelegationRequest {
     private String subject;
 
     @JsonProperty("aud")
+    @JsonSerialize(using = StringOrArraySerializer.class)
+    @JsonDeserialize(using = StringOrArrayDeserializer.class)
     private String[] audience;
 
     @JsonProperty("iss")
