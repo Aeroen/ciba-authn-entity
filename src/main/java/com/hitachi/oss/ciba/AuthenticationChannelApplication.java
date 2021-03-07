@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DecoupledAuthnApplication {
+public class AuthenticationChannelApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DecoupledAuthnApplication.class, args);
+        SpringApplication.run(AuthenticationChannelApplication.class, args);
     }
 
 }

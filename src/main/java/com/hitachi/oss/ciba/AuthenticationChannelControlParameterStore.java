@@ -1,15 +1,15 @@
 package com.hitachi.oss.ciba;
 
-public class DecoupledAuthnControlParameterStore {
+public class AuthenticationChannelControlParameterStore {
 
-    private static DecoupledAuthnControlParameterStore SINGLETON = new DecoupledAuthnControlParameterStore();
+    private static AuthenticationChannelControlParameterStore SINGLETON = new AuthenticationChannelControlParameterStore();
 
-    public static DecoupledAuthnControlParameterStore getInstance() {
+    public static AuthenticationChannelControlParameterStore getInstance() {
         return SINGLETON;
     }
 
     private int waitingInSec = 10;
-    private String authResult = DecoupledAuthnStatus.SUCCEEDED;
+    private String authResult = AuthenticationChannelStatus.SUCCEEDED;
 
     public int getWaitingInSec() {
         return waitingInSec;

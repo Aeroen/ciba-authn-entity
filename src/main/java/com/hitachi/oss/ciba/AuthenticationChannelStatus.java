@@ -1,6 +1,6 @@
 package com.hitachi.oss.ciba;
 
-public interface DecoupledAuthnStatus {
+public interface AuthenticationChannelStatus {
     String SUCCEEDED = "succeeded";
     String UNAUTHORIZED = "unauthorized";
     String CANCELLED = "cancelled";

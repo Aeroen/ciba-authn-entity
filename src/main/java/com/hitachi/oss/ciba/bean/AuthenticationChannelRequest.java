@@ -1,19 +1,19 @@
 package com.hitachi.oss.ciba.bean;
 
-public class DecoupledAuthenticationRequest {
+public class AuthenticationChannelRequest {
 
-    private String decoupledAuthId;
+    private String authenticationChannelId;
     private String userInfo;
     private boolean isConsentRequred;
     private String scope;
     private String bindingMessage;
 
-    public String getDecoupledAuthId() {
-        return decoupledAuthId;
+    public String getAuthenticationChannelId() {
+        return authenticationChannelId;
     }
 
-    public void setDecoupledAuthId(String decoupledAuthId) {
-        this.decoupledAuthId = decoupledAuthId;
+    public void setAuthenticationChannelId(String authenticationChannelId) {
+        this.authenticationChannelId = authenticationChannelId;
     }
 
     public String getUserInfo() {

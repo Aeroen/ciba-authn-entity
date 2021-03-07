@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.hitachi.oss.ciba.DecoupledAuthnControlParameterStore;
+import com.hitachi.oss.ciba.AuthenticationChannelControlParameterStore;
 
 @Controller
 @RequestMapping("/params")
-public class DecoupledAuthnParameterController {
+public class AuthenticationChannelParameterController {
 
     @RequestMapping("/")
     public String input() {
@@ -24,8 +24,8 @@ public class DecoupledAuthnParameterController {
             Model model) {
         model.addAttribute("authresult", authResult);
         model.addAttribute("waitinsec", waitInSec);
-        DecoupledAuthnControlParameterStore.getInstance().setAuthResult(authResult);
-        DecoupledAuthnControlParameterStore.getInstance().setWaitingInSec(waitInSec);
+        AuthenticationChannelControlParameterStore.getInstance().setAuthResult(authResult);
+        AuthenticationChannelControlParameterStore.getInstance().setWaitingInSec(waitInSec);
         return "params/index";
     }
 }
