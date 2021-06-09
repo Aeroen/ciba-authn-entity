@@ -1,4 +1,4 @@
-package com.hitachi.oss.ciba.endpoint;
+package org.tnorimat.oss.ciba.endpoint;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

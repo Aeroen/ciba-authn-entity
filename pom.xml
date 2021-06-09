@@ -9,14 +9,17 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.hiachi.oss</groupId>
+    <groupId>org.tnorimat.oss</groupId>
     <artifactId>ciba-decoupled-authn-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>server</name>
-    <description>CIBA Decoupled Authentication Server</description>
+    <description>CIBA Authentication Entity</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <jackson.version>2.12.1</jackson.version>
+        <jackson.databind.version>${jackson.version}</jackson.databind.version>
+        <jackson.annotations.version>${jackson.databind.version}</jackson.annotations.version>
     </properties>
 
     <dependencies>
@@ -79,14 +82,14 @@
         </dependency>
 
         <dependency>
-        	<groupId>org.springframework.boot</groupId>
-        	<artifactId>spring-boot-configuration-processor</artifactId>
-        	<optional>true</optional>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
-        	<groupId>org.springframework.boot</groupId>
-        	<artifactId>spring-boot-configuration-processor</artifactId>
-        	<optional>true</optional>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

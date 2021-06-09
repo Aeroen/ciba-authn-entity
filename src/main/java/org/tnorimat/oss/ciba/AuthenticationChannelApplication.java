@@ -1,4 +1,4 @@
-package com.hitachi.oss.ciba;
+package org.tnorimat.oss.ciba;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.hitachi.oss.ciba.util;
+package org.tnorimat.oss.ciba.util;
 
 /**
  * <p>Encodes and decodes to and from Base64 notation.</p>

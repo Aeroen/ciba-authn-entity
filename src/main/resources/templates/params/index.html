@@ -2,16 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="utf-8">
-        <title>Decoupled Authn Control Parameter Setting</title>
+        <title>Authn Entity Control Parameter Setting</title>
     </head>
     <body>
         <form method="post" action="paramsform">
             <select name="authresult">
-                <option value="succeeded" th:selected="${authresult == 'succeeded'}">succeeded</option>
-                <option value="unauthorized" th:selected="${authresult == 'unauthorized'}">unauthorized</option>
-                <option value="cancelled" th:selected="${authresult == 'cancelled'}">cancelled</option>
-                <option value="failed" th:selected="${authresult == 'failed'}">failed</option>
-                <option value="unknown" th:selected="${authresult == 'unknown'}">unknown</option>
+                <option value="SUCCEED" th:selected="${authresult == 'SUCCEED'}">SUCCEED</option>
+                <option value="UNAUTHORIZED" th:selected="${authresult == 'UNAUTHORIZED'}">UNAUTHORIZED</option>
+                <option value="CANCELLED" th:selected="${authresult == 'CANCELLED'}">CANCELLED</option>
             </select>
             <input type="number" name="waitinsec" th:value="${waitinsec} ? ${waitinsec} : 10">
             <input type="submit" value="Submit">

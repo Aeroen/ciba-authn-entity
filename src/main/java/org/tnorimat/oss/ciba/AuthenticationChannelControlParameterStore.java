@@ -1,4 +1,4 @@
-package com.hitachi.oss.ciba;
+package org.tnorimat.oss.ciba;
 
 public class AuthenticationChannelControlParameterStore {
 

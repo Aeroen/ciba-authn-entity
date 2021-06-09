@@ -1,4 +1,4 @@
-package com.hitachi.oss.ciba.util;
+package org.tnorimat.oss.ciba.util;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
